@@ -17,7 +17,7 @@
 <body class="p-4 bg-gray-100 flex items-center justify-center min-h-screen">
     <div class="container mx-auto p-6 bg-white rounded-lg shadow-xl max-w-8xl w-full">
 
-        <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">আল-ইহসান সমাজ সেবা ফাউন্ডেশন</h1>
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-6 clr">আল-ইহসান সমাজ সেবা ফাউন্ডেশন</h1>
         
         <!-- Filter Section - Centered and Styled (Now below the title) -->
         <div class="mb-6 flex flex-col items-center">
@@ -40,7 +40,15 @@
             Error loading data. Please check the URL or try again later.
         </div>
     </div>
-
+    <style>
+        .bg_clR {
+    background-color: #4DA8DA;
+    color: white !important;
+}
+    .clr{
+        color: #FF3F33;
+    }
+    </style>
     <script>
         document.addEventListener('DOMContentLoaded', async () => {
             // IMPORTANT: This URL should be your Google Apps Script Web App deployment URL.
@@ -93,7 +101,7 @@
                     const th = document.createElement('th');
                     th.scope = 'col'; // Accessibility attribute
                     th.classList.add(
-                        'px-6', 'py-3', 'text-left', 'text-xl', 'font-medium', 'text-black-700', 'uppercase', 'tracking-wider'
+                        'px-6', 'py-3','bg_clR', 'text-left', 'text-sm', 'font-black', 'text-black-700', 'uppercase', 'tracking-wider'
                     );
                     th.textContent = headerText; // Set header text
                     headerRow.appendChild(th);
